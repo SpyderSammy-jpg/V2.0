@@ -1,0 +1,438 @@
+:root {
+    --color-primary-bg: #07090d;
+    --color-secondary-bg: #10141c;
+    --color-accent-main: #58a6ff;
+    --color-accent-hover: #86c5ff;
+    --color-text: #e7edf7;
+    --color-border: #273244;
+    --space-sm: 0.5rem;
+    --space-md: 0.75rem;
+    --space-lg: 1rem;
+    --space-xl: 1.5rem;
+    --border-subtle: rgba(138, 163, 197, 0.16);
+    --border-default: rgba(138, 163, 197, 0.25);
+    --border-strong: rgba(138, 163, 197, 0.4);
+    --color-surface: rgba(142, 170, 210, 0.06);
+    --color-surface-hover: rgba(142, 170, 210, 0.12);
+    --color-text-muted: rgba(201, 215, 236, 0.7);
+    --color-text-dim: rgba(221, 230, 245, 0.84);
+    --color-text-full: #edf4ff;
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --particle-dot: #dce9ff;
+    --particle-line: rgba(162, 188, 225, 0.22);
+    --particle-glow: rgba(162, 188, 225, 0.14);
+    --particle-dot-size: 1.2;
+    --particle-line-width: 0.8;
+    --particle-speed: 0.28;
+    --particle-link-distance: 82;
+    --particle-canvas-opacity: 0.92;
+    --particle-canvas-blend: normal;
+    --particle-canvas-bg: transparent;
+}
+
+[data-theme="dark"] {
+    --color-primary-bg: #000000;
+    --color-secondary-bg: #000000;
+    --color-accent-main: #ffffff;
+    --color-accent-hover: #ffffff;
+    --color-text: #ffffff;
+    --color-text-muted: #ffffff;
+    --color-border: #ffffff;
+    --color-surface: rgba(255,255,255,0.02);
+    --color-surface-hover: rgba(255,255,255,0.08);
+    --border-subtle: rgba(255,255,255,0.10);
+    --border-default: rgba(255,255,255,0.18);
+    --border-strong: rgba(255,255,255,0.30);
+    --color-text-dim: rgba(255,255,255,0.75);
+    --color-text-full: rgba(255,255,255,0.90);
+    --particle-dot: #ffffff;
+    --particle-line: rgba(255,255,255,0.15);
+    --particle-glow: rgba(255,255,255,0.04);
+    --particle-dot-size: 1.2;
+    --particle-line-width: 0.8;
+    --particle-speed: 0.28;
+    --particle-link-distance: 82;
+    --particle-canvas-opacity: 0.92;
+    --particle-canvas-blend: normal;
+    --particle-canvas-bg: transparent;
+}
+
+[data-theme="light"] {
+    --color-primary-bg: #f7f8fc;
+    --color-secondary-bg: #ffffff;
+    --color-accent-main: #315de8;
+    --color-accent-hover: #224bcc;
+    --color-text: #1a2333;
+    --color-text-muted: #5d6c83;
+    --color-border: #d5deeb;
+    --color-surface: rgba(61, 96, 170, 0.07);
+    --color-surface-hover: rgba(61, 96, 170, 0.12);
+    --border-subtle: rgba(61, 96, 170, 0.12);
+    --border-default: rgba(61, 96, 170, 0.22);
+    --border-strong: rgba(61, 96, 170, 0.34);
+    --color-text-dim: rgba(40, 55, 78, 0.9);
+    --color-text-full: #111a27;
+    --particle-dot: rgba(52, 94, 206, 0.5);
+    --particle-line: rgba(52, 94, 206, 0.14);
+    --particle-glow: rgba(52, 94, 206, 0.12);
+    --particle-dot-size: 1.3;
+    --particle-line-width: 0.65;
+    --particle-speed: 0.22;
+    --particle-link-distance: 72;
+    --particle-canvas-opacity: 0.74;
+    --particle-canvas-blend: multiply;
+    --particle-canvas-bg: rgba(255, 255, 255, 0.2);
+}
+
+[data-theme="matrix"] {
+    --color-primary-bg: #040b06;
+    --color-secondary-bg: #0a170f;
+    --color-accent-main: #27df65;
+    --color-accent-hover: #4af185;
+    --color-text: #d6ffe3;
+    --color-text-muted: #6aaa7c;
+    --color-border: #1b4630;
+    --color-surface: rgba(57, 227, 116, 0.06);
+    --color-surface-hover: rgba(57, 227, 116, 0.12);
+    --border-subtle: rgba(57, 227, 116, 0.13);
+    --border-default: rgba(57, 227, 116, 0.23);
+    --border-strong: rgba(57, 227, 116, 0.35);
+    --color-text-dim: rgba(184, 243, 200, 0.9);
+    --color-text-full: #e5ffee;
+    --particle-dot: rgba(72, 247, 132, 0.9);
+    --particle-line: rgba(57, 227, 116, 0.2);
+    --particle-glow: rgba(72, 247, 132, 0.16);
+    --particle-dot-size: 1.0;
+    --particle-line-width: 0.75;
+    --particle-speed: 0.36;
+    --particle-link-distance: 96;
+    --particle-canvas-opacity: 0.95;
+    --particle-canvas-blend: screen;
+    --particle-canvas-bg: linear-gradient(180deg, rgba(18, 59, 33, 0.18), rgba(0, 0, 0, 0));
+}
+
+[data-theme="blood"] {
+    --color-primary-bg: #170708;
+    --color-secondary-bg: #231011;
+    --color-accent-main: #ef4f52;
+    --color-accent-hover: #ff7476;
+    --color-text: #ffe7e8;
+    --color-text-muted: #b89194;
+    --color-border: #4a2326;
+    --color-surface: rgba(239, 79, 82, 0.06);
+    --color-surface-hover: rgba(239, 79, 82, 0.13);
+    --border-subtle: rgba(239, 79, 82, 0.13);
+    --border-default: rgba(239, 79, 82, 0.24);
+    --border-strong: rgba(239, 79, 82, 0.36);
+    --color-text-dim: rgba(244, 205, 206, 0.9);
+    --color-text-full: #fff0f1;
+    --particle-dot: rgba(255, 126, 130, 0.88);
+    --particle-line: rgba(250, 83, 88, 0.19);
+    --particle-glow: rgba(255, 92, 97, 0.16);
+    --particle-dot-size: 1.3;
+    --particle-line-width: 0.9;
+    --particle-speed: 0.3;
+    --particle-link-distance: 74;
+    --particle-canvas-opacity: 0.9;
+    --particle-canvas-blend: screen;
+    --particle-canvas-bg: radial-gradient(circle at 50% 18%, rgba(153, 30, 36, 0.22), rgba(0, 0, 0, 0));
+}
+
+[data-theme="sunset"] {
+    --color-primary-bg: #1c1020;
+    --color-secondary-bg: #2b1630;
+    --color-accent-main: #ff9d3c;
+    --color-accent-hover: #ffb35d;
+    --color-text: #fff1df;
+    --color-text-muted: #d0a7b2;
+    --color-border: #5a2d4f;
+    --color-surface: rgba(255, 157, 60, 0.08);
+    --color-surface-hover: rgba(255, 157, 60, 0.14);
+    --border-subtle: rgba(255, 157, 60, 0.14);
+    --border-default: rgba(255, 157, 60, 0.24);
+    --border-strong: rgba(255, 157, 60, 0.37);
+    --color-text-dim: rgba(245, 220, 210, 0.92);
+    --color-text-full: #fff6ea;
+    --particle-dot: rgba(255, 181, 104, 0.84);
+    --particle-line: rgba(255, 124, 98, 0.17);
+    --particle-glow: rgba(255, 168, 84, 0.15);
+    --particle-dot-size: 1.45;
+    --particle-line-width: 0.72;
+    --particle-speed: 0.24;
+    --particle-link-distance: 78;
+    --particle-canvas-opacity: 0.88;
+    --particle-canvas-blend: screen;
+    --particle-canvas-bg: radial-gradient(circle at 50% 112%, rgba(255, 133, 74, 0.2), rgba(0, 0, 0, 0));
+}
+
+[data-theme="forest"] {
+    --color-primary-bg: #071008;
+    --color-secondary-bg: #112018;
+    --color-accent-main: #4fd48a;
+    --color-accent-hover: #6ee7a0;
+    --color-text: #e9ffee;
+    --color-text-muted: #82b090;
+    --color-border: #254333;
+    --color-surface: rgba(79, 212, 138, 0.06);
+    --color-surface-hover: rgba(79, 212, 138, 0.12);
+    --border-subtle: rgba(79, 212, 138, 0.13);
+    --border-default: rgba(79, 212, 138, 0.22);
+    --border-strong: rgba(79, 212, 138, 0.34);
+    --color-text-dim: rgba(190, 233, 200, 0.9);
+    --color-text-full: #f2fff5;
+    --particle-dot: rgba(128, 233, 165, 0.78);
+    --particle-line: rgba(79, 212, 138, 0.15);
+    --particle-glow: rgba(79, 212, 138, 0.12);
+    --particle-dot-size: 1.5;
+    --particle-line-width: 0.55;
+    --particle-speed: 0.2;
+    --particle-link-distance: 96;
+    --particle-canvas-opacity: 0.84;
+    --particle-canvas-blend: screen;
+    --particle-canvas-bg: radial-gradient(circle at 30% 6%, rgba(31, 93, 50, 0.22), rgba(0, 0, 0, 0));
+}
+
+[data-theme="cyberpunk"] {
+    --color-primary-bg: #0b0912;
+    --color-secondary-bg: #151122;
+    --color-accent-main: #20e6ff;
+    --color-accent-hover: #62f0ff;
+    --color-text: #f2f5ff;
+    --color-text-muted: #9aa8c6;
+    --color-border: #47407e;
+    --color-surface: rgba(32, 230, 255, 0.08);
+    --color-surface-hover: rgba(32, 230, 255, 0.15);
+    --border-subtle: rgba(32, 230, 255, 0.15);
+    --border-default: rgba(32, 230, 255, 0.26);
+    --border-strong: rgba(32, 230, 255, 0.4);
+    --color-text-dim: rgba(212, 224, 255, 0.92);
+    --color-text-full: #fbfcff;
+    --particle-dot: rgba(69, 241, 255, 0.92);
+    --particle-line: rgba(255, 90, 195, 0.2);
+    --particle-glow: rgba(69, 241, 255, 0.2);
+    --particle-dot-size: 1.1;
+    --particle-line-width: 1;
+    --particle-speed: 0.44;
+    --particle-link-distance: 88;
+    --particle-canvas-opacity: 0.96;
+    --particle-canvas-blend: screen;
+    --particle-canvas-bg: linear-gradient(135deg, rgba(32, 230, 255, 0.12), rgba(255, 90, 195, 0.12));
+}
+
+[data-theme="midnight"] {
+    --color-primary-bg: #070d18;
+    --color-secondary-bg: #101a2a;
+    --color-accent-main: #5ca3ff;
+    --color-accent-hover: #89bcff;
+    --color-text: #e6eefb;
+    --color-text-muted: #8ca4c8;
+    --color-border: #2a3f61;
+    --color-surface: rgba(92, 163, 255, 0.07);
+    --color-surface-hover: rgba(92, 163, 255, 0.13);
+    --border-subtle: rgba(92, 163, 255, 0.14);
+    --border-default: rgba(92, 163, 255, 0.24);
+    --border-strong: rgba(92, 163, 255, 0.37);
+    --color-text-dim: rgba(198, 218, 246, 0.9);
+    --color-text-full: #f0f6ff;
+    --particle-dot: rgba(132, 187, 255, 0.82);
+    --particle-line: rgba(92, 163, 255, 0.18);
+    --particle-glow: rgba(92, 163, 255, 0.14);
+    --particle-dot-size: 1.28;
+    --particle-line-width: 0.72;
+    --particle-speed: 0.26;
+    --particle-link-distance: 90;
+    --particle-canvas-opacity: 0.9;
+    --particle-canvas-blend: normal;
+    --particle-canvas-bg: linear-gradient(180deg, rgba(30, 58, 107, 0.16), rgba(0, 0, 0, 0));
+}
+
+[data-theme="purplehaze"] {
+    --color-primary-bg: #120a1f;
+    --color-secondary-bg: #1d1230;
+    --color-accent-main: #b178ff;
+    --color-accent-hover: #ca9eff;
+    --color-text: #f6ecff;
+    --color-text-muted: #af8bc8;
+    --color-border: #4b2f70;
+    --color-surface: rgba(177, 120, 255, 0.08);
+    --color-surface-hover: rgba(177, 120, 255, 0.15);
+    --border-subtle: rgba(177, 120, 255, 0.14);
+    --border-default: rgba(177, 120, 255, 0.24);
+    --border-strong: rgba(177, 120, 255, 0.36);
+    --color-text-dim: rgba(225, 205, 245, 0.9);
+    --color-text-full: #fbf4ff;
+    --particle-dot: rgba(205, 158, 255, 0.84);
+    --particle-line: rgba(237, 106, 193, 0.17);
+    --particle-glow: rgba(177, 120, 255, 0.16);
+    --particle-dot-size: 1.38;
+    --particle-line-width: 0.64;
+    --particle-speed: 0.28;
+    --particle-link-distance: 80;
+    --particle-canvas-opacity: 0.9;
+    --particle-canvas-blend: screen;
+    --particle-canvas-bg: radial-gradient(circle at 72% 20%, rgba(177, 120, 255, 0.22), rgba(0, 0, 0, 0));
+}
+
+[data-theme="coffee"] {
+    --color-primary-bg: #130f0b;
+    --color-secondary-bg: #201913;
+    --color-accent-main: #d3a066;
+    --color-accent-hover: #e5bb85;
+    --color-text: #fcf4e8;
+    --color-text-muted: #b39675;
+    --color-border: #473528;
+    --color-surface: rgba(211, 160, 102, 0.07);
+    --color-surface-hover: rgba(211, 160, 102, 0.13);
+    --border-subtle: rgba(211, 160, 102, 0.13);
+    --border-default: rgba(211, 160, 102, 0.23);
+    --border-strong: rgba(211, 160, 102, 0.35);
+    --color-text-dim: rgba(228, 204, 173, 0.9);
+    --color-text-full: #fff8f0;
+    --particle-dot: rgba(229, 187, 133, 0.78);
+    --particle-line: rgba(211, 160, 102, 0.16);
+    --particle-glow: rgba(211, 160, 102, 0.13);
+    --particle-dot-size: 1.48;
+    --particle-line-width: 0.55;
+    --particle-speed: 0.18;
+    --particle-link-distance: 76;
+    --particle-canvas-opacity: 0.82;
+    --particle-canvas-blend: normal;
+    --particle-canvas-bg: linear-gradient(180deg, rgba(112, 74, 41, 0.18), rgba(0, 0, 0, 0));
+}
+
+[data-theme="ocean"] {
+    --color-primary-bg: #05101c;
+    --color-secondary-bg: #0a1c31;
+    --color-accent-main: #3cb8ff;
+    --color-accent-hover: #77d2ff;
+    --color-text: #e3f6ff;
+    --color-text-muted: #82abc8;
+    --color-border: #224466;
+    --color-surface: rgba(60, 184, 255, 0.08);
+    --color-surface-hover: rgba(60, 184, 255, 0.14);
+    --border-subtle: rgba(60, 184, 255, 0.14);
+    --border-default: rgba(60, 184, 255, 0.24);
+    --border-strong: rgba(60, 184, 255, 0.37);
+    --color-text-dim: rgba(188, 225, 247, 0.9);
+    --color-text-full: #f0fbff;
+    --particle-dot: rgba(124, 214, 255, 0.84);
+    --particle-line: rgba(60, 184, 255, 0.2);
+    --particle-glow: rgba(60, 184, 255, 0.14);
+    --particle-dot-size: 1.3;
+    --particle-line-width: 0.72;
+    --particle-speed: 0.32;
+    --particle-link-distance: 100;
+    --particle-canvas-opacity: 0.92;
+    --particle-canvas-blend: screen;
+    --particle-canvas-bg: radial-gradient(circle at 50% 110%, rgba(60, 184, 255, 0.2), rgba(0, 0, 0, 0));
+}
+
+[data-theme="aurora"] {
+    --color-primary-bg: #091022;
+    --color-secondary-bg: #131933;
+    --color-accent-main: #3de1c6;
+    --color-accent-hover: #7ef0de;
+    --color-text: #e7f0ff;
+    --color-text-muted: #9cabca;
+    --color-border: #3b4d7a;
+    --color-surface: rgba(96, 143, 255, 0.08);
+    --color-surface-hover: rgba(96, 143, 255, 0.15);
+    --border-subtle: rgba(96, 143, 255, 0.14);
+    --border-default: rgba(96, 143, 255, 0.25);
+    --border-strong: rgba(96, 143, 255, 0.38);
+    --color-text-dim: rgba(200, 216, 247, 0.92);
+    --color-text-full: #f4f8ff;
+    --particle-dot: rgba(126, 240, 222, 0.86);
+    --particle-line: rgba(158, 128, 255, 0.2);
+    --particle-glow: rgba(90, 194, 255, 0.17);
+    --particle-dot-size: 1.2;
+    --particle-line-width: 0.78;
+    --particle-speed: 0.34;
+    --particle-link-distance: 94;
+    --particle-canvas-opacity: 0.94;
+    --particle-canvas-blend: screen;
+    --particle-canvas-bg: linear-gradient(160deg, rgba(61, 225, 198, 0.14), rgba(158, 128, 255, 0.14));
+}
+
+[data-theme="ember"] {
+    --color-primary-bg: #1a120d;
+    --color-secondary-bg: #291910;
+    --color-accent-main: #ff8f4d;
+    --color-accent-hover: #ffb06f;
+    --color-text: #fff1e4;
+    --color-text-muted: #c8a188;
+    --color-border: #65402a;
+    --color-surface: rgba(255, 143, 77, 0.08);
+    --color-surface-hover: rgba(255, 143, 77, 0.15);
+    --border-subtle: rgba(255, 143, 77, 0.14);
+    --border-default: rgba(255, 143, 77, 0.25);
+    --border-strong: rgba(255, 143, 77, 0.38);
+    --color-text-dim: rgba(247, 213, 189, 0.9);
+    --color-text-full: #fff8f0;
+    --particle-dot: rgba(255, 176, 111, 0.86);
+    --particle-line: rgba(255, 111, 76, 0.2);
+    --particle-glow: rgba(255, 140, 88, 0.18);
+    --particle-dot-size: 1.5;
+    --particle-line-width: 0.7;
+    --particle-speed: 0.25;
+    --particle-link-distance: 82;
+    --particle-canvas-opacity: 0.9;
+    --particle-canvas-blend: screen;
+    --particle-canvas-bg: radial-gradient(circle at 50% 108%, rgba(255, 108, 70, 0.22), rgba(0, 0, 0, 0));
+}
+
+[data-theme="graphite"] {
+    --color-primary-bg: #0d0f13;
+    --color-secondary-bg: #171c25;
+    --color-accent-main: #8fb0d9;
+    --color-accent-hover: #bdd1ea;
+    --color-text: #edf2f8;
+    --color-text-muted: #9aa7bb;
+    --color-border: #3a4659;
+    --color-surface: rgba(143, 176, 217, 0.08);
+    --color-surface-hover: rgba(143, 176, 217, 0.14);
+    --border-subtle: rgba(143, 176, 217, 0.14);
+    --border-default: rgba(143, 176, 217, 0.24);
+    --border-strong: rgba(143, 176, 217, 0.36);
+    --color-text-dim: rgba(205, 217, 235, 0.9);
+    --color-text-full: #f8fbff;
+    --particle-dot: rgba(189, 209, 234, 0.8);
+    --particle-line: rgba(143, 176, 217, 0.18);
+    --particle-glow: rgba(143, 176, 217, 0.14);
+    --particle-dot-size: 1.2;
+    --particle-line-width: 0.7;
+    --particle-speed: 0.24;
+    --particle-link-distance: 86;
+    --particle-canvas-opacity: 0.88;
+    --particle-canvas-blend: normal;
+    --particle-canvas-bg: linear-gradient(180deg, rgba(68, 86, 112, 0.16), rgba(0, 0, 0, 0));
+}
+
+[data-theme="sakura"] {
+    --color-primary-bg: #170f1d;
+    --color-secondary-bg: #24162b;
+    --color-accent-main: #ff8fbc;
+    --color-accent-hover: #ffb2d0;
+    --color-text: #ffeeF7;
+    --color-text-muted: #c19ab3;
+    --color-border: #5c3b58;
+    --color-surface: rgba(255, 143, 188, 0.09);
+    --color-surface-hover: rgba(255, 143, 188, 0.16);
+    --border-subtle: rgba(255, 143, 188, 0.15);
+    --border-default: rgba(255, 143, 188, 0.25);
+    --border-strong: rgba(255, 143, 188, 0.38);
+    --color-text-dim: rgba(245, 215, 232, 0.9);
+    --color-text-full: #fff3fa;
+    --particle-dot: rgba(255, 178, 208, 0.86);
+    --particle-line: rgba(190, 133, 255, 0.19);
+    --particle-glow: rgba(255, 143, 188, 0.18);
+    --particle-dot-size: 1.35;
+    --particle-line-width: 0.67;
+    --particle-speed: 0.26;
+    --particle-link-distance: 84;
+    --particle-canvas-opacity: 0.9;
+    --particle-canvas-blend: screen;
+    --particle-canvas-bg: radial-gradient(circle at 75% 18%, rgba(255, 143, 188, 0.22), rgba(0, 0, 0, 0));
+}
